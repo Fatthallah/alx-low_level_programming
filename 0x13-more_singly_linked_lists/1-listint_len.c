@@ -2,10 +2,11 @@
 
 /**
  * Comments of 2nd Task.
- * listint_len : This Function Returns the number of elements in a linked lists.
- * @p: linked list to be traversed of type listint_t.
+ * Task Name: List length.
+ * _listint_len : This Function Returns the number of elements in a linked lists.
+ * _@p: linked list to be traversed of type listint_t.
  *
- * Return: It declares that it will be number of nodes.
+ * _Return: It declares that it will be number of nodes.
  * End Of Comments of 2nd Task.
  */
 

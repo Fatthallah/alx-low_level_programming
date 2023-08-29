@@ -2,8 +2,9 @@
 
 /**
  * Comment of 5th Task.
- * free_listint : It Frees The Linked List.
- * @head: The Function listint_t Lists to be freed.
+ * Task Name: Free list.
+ * _free_listint : It Frees The Linked List.
+ * _@head: The Function listint_t Lists to be freed.
  * End Of Comments.
  */
 void free_listint(listint_t *head){

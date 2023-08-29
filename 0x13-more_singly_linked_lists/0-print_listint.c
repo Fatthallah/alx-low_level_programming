@@ -2,12 +2,12 @@
 
 /**
  * Comments For 1st Task.
- * Task_Name : (Print list)
- * print_listint: It Prints ALL of The Linked List's Elements Given.
- * @p: It Declare that Linked List to be printed of type listint_t.
+ * _Task_Name : (Print list)
+ * _print_listint: It Prints ALL of The Linked List's Elements Given.
+ * _@p: It Declare that Linked List to be printed of type listint_t.
  *
- * Return: What it returns is #Number_of_Nodes.
- * End Of Comments.
+ * _Return: What it returns is #Number_of_Nodes.
+ * _End Of Comments.
  */
 
 size_t print_listint(const listint_t *p){

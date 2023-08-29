@@ -2,11 +2,12 @@
 
 /**
  * Comments For 3rd Task.
- * add_nodeint : This Function Adds a new node at the beginning of a linked list.
- * @head: Declares that pointer to first node in a list.
- * @n:It declares that data to be inserted in that new node.
+ * Task Name: Add node.
+ * _add_nodeint : This Function Adds a new node at the beginning of a linked list.
+ * _@head: Declares that pointer to first node in a list.
+ * _@n:It declares that data to be inserted in that new node.
  *
- * Return: It declares that pointer to the NEW node or NULL if fails.
+ * _Return: It declares that pointer to the NEW node or NULL if fails.
  * End Of Comments.
  */
 

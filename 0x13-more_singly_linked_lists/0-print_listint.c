@@ -4,18 +4,18 @@
  * Comments For 1st Task.
  * Task_Name : (Print list)
  * print_listint: It Prints ALL of The Linked List's Elements Given.
- * @h: It Declare that Linked List to be printed of type listint_t.
+ * @p: It Declare that Linked List to be printed of type listint_t.
  *
  * Return: What it returns is #Number_of_Nodes.
  * End Of Comments.
  */
 
-size_t print_listint(const listint_t *h){
+size_t print_listint(const listint_t *p){
 	size_t num = 0;
-	while(h){
-		printf("%d\n", h->n);
+	while(p){
+		printf ("%d\n", p->n);
 		num++;
-		h = h->next;
+		p = p->next;
 	}
 	return(num);
 }

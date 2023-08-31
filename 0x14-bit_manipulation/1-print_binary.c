@@ -4,6 +4,7 @@
  * print_binary - Prints The Binary Number that is equal to Decimal Number.
  * @n: Number to Be Printed In Binary After Convertion.
  */
+
 void print_binary(unsigned long int n)
 {
 	int X = sizeof(n) * 8;

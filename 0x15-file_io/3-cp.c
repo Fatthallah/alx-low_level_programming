@@ -6,8 +6,8 @@ void cl_fl(int f);
 char *cr_bf(char *fl);
 
 /**
+ * cr_bf - collect 1024 b for bf.
  * 1st Documentation.
- * cr_bf BuFFER 1024 .
  * @fl: The Files Name.
  *
  * Return: The BUFFER.
@@ -30,8 +30,9 @@ char *cr_bf(char *fl)
 }
 
 /**
- * 2nd Documentation.
  * cl_fl - CLOSE THE FILE.
+ * 2nd Documentation.
+ *
  * @f: THE FILE.
  */
 
@@ -49,8 +50,8 @@ void cl_fl(int f)
 }
 
 /**
- * 3rd Cocumentation
  * main - The Copy.
+ * 3rd Docummentation.
  * @agc: No. Of Arg.
  * @agv: The Array.
  *

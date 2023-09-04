@@ -7,15 +7,15 @@
 #include <sys/types.h>
 
 
-void prt_abii(unsigned char *e_ident);
-void prt_sabii(unsigned char *e_ident);
-void prt_dta(unsigned char *e_ident);
-void prt_tpe(unsigned int e_type, unsigned char *e_ident);
-void prt_vrs(unsigned char *e_ident);
-void chk_elf(unsigned char *e_ident);
-void prt_clss(unsigned char *e_ident);
-void prt_ety(unsigned long int e_entry, unsigned char *e_ident);
-void prt_mgc(unsigned char *e_ident);
+void prt_abii(unsigned char *e_id);
+void prt_sabii(unsigned char *e_id);
+void prt_dta(unsigned char *e_id);
+void prt_tpe(unsigned int e_tpe, unsigned char *e_id);
+void prt_vrs(unsigned char *e_id);
+void chk_elf(unsigned char *e_id);
+void prt_clss(unsigned char *e_id);
+void prt_ety(unsigned long int e_ety, unsigned char *e_id);
+void prt_mgc(unsigned char *e_id);
 void cls_elf(int elf);
 
 /**
@@ -223,7 +223,7 @@ void prt_tpe(unsigned int e_tpe, unsigned char *e_id)
 		printf("CORE (Core file)\n");
 		break;
 	default:
-		printf("<unknown: %x>\n", e_type);
+		printf("<unknown: %x>\n", e_tpe);
 	}
 }
 
@@ -295,7 +295,7 @@ int main(int __attribute__((__unused__)) agc, char *agv[])
 	header = malloc(sizeof(Elf64_Ehdr));
 	if (header == NULL)
 	{
-		close_elf(oo);
+		cls_elf(oo);
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", agv[1]);
 		exit(98);
 	}
@@ -308,16 +308,16 @@ int main(int __attribute__((__unused__)) agc, char *agv[])
 		exit(98);
 	}
 
-	chk_elf(header->e_id);
+	chk_elf(header->e_ident);
 	printf("ELF Header:\n");
-	prt_mgc(header->e_id);
-	prt_clss(header->e_id);
-	prt_dta(header->e_id);
-	prt_vrs(header->e_id);
-	prt_sabii(header->e_id);
-	prt_abii(header->e_id);
-	prt_tpe(header->e_tpe, header->e_id);
-	prt_ety(header->e_ety, header->e_id);
+	prt_mgc(header->e_ident);
+	prt_clss(header->e_ident);
+	prt_dta(header->e_ident);
+	prt_vrs(header->e_ident);
+	prt_sabii(header->e_ident);
+	prt_abii(header->e_ident);
+	prt_tpe(header->e_type, header->e_ident);
+	prt_ety(header->e_entry, header->e_ident);
 
 	free(header);
 	cls_elf(oo);

@@ -119,7 +119,8 @@ void prt_dta(unsigned char *e_id)
 /**
  *  * prt_vrs - the version to be printed.
  *   * @e_id: Array.
- *    */
+ *
+ */
 
 void prt_vrs(unsigned char *e_id)
 {
@@ -269,8 +270,7 @@ void cls_elf(int elf)
 }
 
 /**
- * main - jjjjjjjjjjjjjj
- * ELF 
+ * main - jjjjjjjjjjjjjjxxxxxxxx
  * @agc: kkkkkkkkkkkkkk
  * @agv: lllllllllllllll
  *

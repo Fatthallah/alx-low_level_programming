@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * key_index - fun
  * @key: ref
